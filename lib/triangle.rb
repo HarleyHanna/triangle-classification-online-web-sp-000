@@ -13,7 +13,7 @@ class Triangle
   end
   
   def kind
-    if @one + @two < @three || @one + @three < @two || @two + @three < @one ||
+    if @one + @two < @three || @one + @three < @two || @two + @three < @one
       raise TriangleError
     elsif @one <= 0 || @two <= 0 || @three <= 0
       raise TriangleError
