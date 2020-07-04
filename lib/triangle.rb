@@ -24,4 +24,5 @@ class Triangle
     elsif @one != @two && @two != @three
       return :scalene
     end
+  end
 end
