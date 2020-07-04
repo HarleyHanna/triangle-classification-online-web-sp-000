@@ -14,9 +14,9 @@ class Triangle
   
   def kind
     if @one + @two < @three || @one + @three < @two || @two + @three < @one ||
-      TriangleError
+      raise TriangleError
     elsif @one <= 0 || @two <= 0 || @three <= 0
-      TriangleError
+      raise TriangleError
     elsif @one == @two || @one == @three || @two == @three
       return :isosceles
     elsif @one == @two && @two == @three
