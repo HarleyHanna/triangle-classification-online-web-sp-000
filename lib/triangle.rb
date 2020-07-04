@@ -17,7 +17,8 @@ class Triangle
       TriangleError
     elsif @one <= 0 || @two <= 0 || @three <= 0
       TriangleError
-    else
-      
+    elsif @one == @two || @one == @three || @two == @three
+      return :isosceles
+    elsif 
   
 end
