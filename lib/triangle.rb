@@ -19,6 +19,8 @@ class Triangle
       TriangleError
     elsif @one == @two || @one == @three || @two == @three
       return :isosceles
+    elsif @one == @two && @two == @three
+      return :equilateral
     elsif 
   
 end
